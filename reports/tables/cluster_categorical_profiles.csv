@@ -1,0 +1,5 @@
+kmeans_cluster,moment_of_activity=afternoon,moment_of_activity=evening,moment_of_activity=late_night,moment_of_activity=morning,device_type=desktop,device_type=mobile,device_type=tablet,used_recommendations=0,used_recommendations=1
+0,23.3,32.300000000000004,17.7,26.700000000000003,21.7,46.7,31.7,60.699999999999996,39.300000000000004
+1,43.1,56.89999999999999,0.0,0.0,0.0,83.1,16.900000000000002,77.3,22.7
+2,51.5,0.0,0.0,48.5,90.9,0.0,9.1,11.200000000000001,88.8
+3,0.0,37.9,30.4,31.7,0.0,100.0,0.0,52.5,47.5

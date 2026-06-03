@@ -1,0 +1,5 @@
+Component,Feature,Loading,Direction
+PC1,(distributed),,—
+PC2,total_time_min_scaled,0.675,(+)
+PC3,complementary_interactions_scaled,0.606,(+)
+PC3,completion_depth_avg_scaled,-0.563,(-)

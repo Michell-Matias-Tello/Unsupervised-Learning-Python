@@ -1,0 +1,10 @@
+Feature,Category,Count,Percentage
+moment_of_activity,evening,495,33.00%
+moment_of_activity,afternoon,457,30.47%
+moment_of_activity,morning,381,25.40%
+moment_of_activity,late_night,167,11.13%
+device_type,mobile,889,59.27%
+device_type,desktop,406,27.07%
+device_type,tablet,205,13.67%
+used_recommendations,0,769,51.27%
+used_recommendations,1,731,48.73%

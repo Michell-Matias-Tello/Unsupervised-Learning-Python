@@ -1,0 +1,5 @@
+Cause,Description
+Uniform Density Distribution,Smooth k-distance gradient without sharp inflection; clusters share similar densities.
+Spherical Cluster Geometry,PC1 captures distributed variance; clusters are spherical and well-separated (ideal for K-Means).
+No Natural Noise Points,Synthetic data engineered with 4 clean clusters; every point belongs to a meaningful group.
+Extreme Noise Sensitivity,At eps=0.0362 even min_pts=3 yields massive noise; higher eps fragments into micro-groups.

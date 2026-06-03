@@ -1,0 +1,3 @@
+Feature,Unique_Values,Binary_Columns,Original,Encoded
+moment_of_activity,4,4,"['afternoon', 'evening', 'late_night', 'morning']","['moment_of_activity_afternoon', 'moment_of_activity_evening', 'moment_of_activity_late_night', 'moment_of_activity_morning']"
+device_type,3,3,"['desktop', 'mobile', 'tablet']","['device_type_desktop', 'device_type_mobile', 'device_type_tablet']"

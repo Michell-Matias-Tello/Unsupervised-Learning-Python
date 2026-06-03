@@ -1,0 +1,5 @@
+Cluster,Persona,Share,Count,Strategy
+Cluster 0,Download & Depart,20.0%,300 sessions,"Offline access, queue management, push notifications for saved content"
+Cluster 1,Sampling Nomads,30.0%,450 sessions,"Curated discovery feeds, topic bundles, social sharing features"
+Cluster 2,Marathon Finishers,25.0%,375 sessions,"Premium long-form content, sequential playlists, loyalty rewards"
+Cluster 3,Burst Consumers,25.0%,375 sessions,"Short-form mobile UX, seamless session resumption, micro-playlists"

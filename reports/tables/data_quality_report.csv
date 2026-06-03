@@ -1,0 +1,10 @@
+Feature,Missing_Values,Data_Type,Status
+total_time_min,0,float64,✓ Clean
+pieces_started,0,int64,✓ Clean
+completion_depth_avg,0,float64,✓ Clean
+complementary_interactions,0,int64,✓ Clean
+thematic_diversity,0,int64,✓ Clean
+pause_count,0,int64,✓ Clean
+moment_of_activity,0,str,✓ Clean
+device_type,0,str,✓ Clean
+used_recommendations,0,int64,✓ Clean

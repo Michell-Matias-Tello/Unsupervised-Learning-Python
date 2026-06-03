@@ -1,0 +1,15 @@
+index,feature
+1,total_time_min_scaled
+2,pieces_started_scaled
+3,completion_depth_avg_scaled
+4,complementary_interactions_scaled
+5,thematic_diversity_scaled
+6,pause_count_scaled
+7,moment_of_activity_afternoon
+8,moment_of_activity_evening
+9,moment_of_activity_late_night
+10,moment_of_activity_morning
+11,device_type_desktop
+12,device_type_mobile
+13,device_type_tablet
+14,used_recommendations

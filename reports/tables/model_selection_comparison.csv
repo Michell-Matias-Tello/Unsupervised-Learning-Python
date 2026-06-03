@@ -1,0 +1,7 @@
+Criterion,K-Means (k=4),DBSCAN Assessment
+Clusters Identified,4,0–55 (unstable)
+Silhouette Score,0.7151,— (≥86.5% noise)
+Davies-Bouldin Index,0.3867,— (no valid config)
+Point Coverage,"1,500 / 1,500 (100%)","≤ 203 / 1,500 (≤13.5%)"
+Algorithm-Data Fit,"✓ Optimal — spherical, well-separated clusters",✗ Structurally unsuitable — uniform density
+Business Interpretability,✓ High — clear centroid profiles,✗ Noise-dominant output uninterpretable

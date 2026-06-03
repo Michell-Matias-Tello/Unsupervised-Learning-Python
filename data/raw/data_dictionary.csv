@@ -1,0 +1,12 @@
+variable_name,description,data_type
+session_id,Unique anonymous identifier for each session,string
+total_time_min,Total session duration in minutes,float64
+pieces_started,Number of content pieces started during the session,int64
+completion_depth_avg,Average completion percentage across all started pieces (0-100),float64
+complementary_interactions,"Count of interactions with complementary features (save, bookmark, download)",int64
+thematic_diversity,Number of distinct content categories visited,int64
+pause_count,Number of pause events during the session,int64
+navigation_speed,Calculated: pieces_started divided by total_time_min,float64
+moment_of_activity,Predominant time block of activity (morning/afternoon/evening/late_night),category
+device_type,Device category used for the session (desktop/mobile/tablet),category
+used_recommendations,"Binary indicator: session used personalized recommendations (1=yes, 0=no)",int64

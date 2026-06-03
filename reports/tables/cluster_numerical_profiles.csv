@@ -1,0 +1,7 @@
+Feature,Cluster 0,Cluster 1,Cluster 2,Cluster 3
+Total Time Min,4.9 ± 1.9,22.1 ± 4.9,52.2 ± 8.3,11.1 ± 3.0
+Pieces Started,1.9 ± 0.8,14.6 ± 2.8,3.0 ± 0.8,4.5 ± 1.1
+Completion Depth Avg,8.3 ± 4.7,11.8 ± 4.5,91.3 ± 4.7,47.5 ± 12.4
+Complementary Interactions,6.6 ± 1.8,0.5 ± 0.5,9.5 ± 2.3,1.9 ± 0.8
+Thematic Diversity,1.5 ± 0.5,6.9 ± 1.4,1.5 ± 0.5,2.0 ± 0.8
+Pause Count,0.0 ± 0.0,2.5 ± 1.1,0.0 ± 0.0,0.5 ± 0.5

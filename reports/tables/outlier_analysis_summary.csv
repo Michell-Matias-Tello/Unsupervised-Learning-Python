@@ -1,0 +1,8 @@
+Feature,Q1,Q3,IQR,Lower Bound,Upper Bound,Outlier Count,Outlier %,Severity,Recommendation
+Total Time Min,8.6750,35.0000,26.3250,-30.8125,74.4875,2,0.13%,LOW,Likely natural variation
+Pieces Started,3.0000,11.0000,8.0000,-9.0000,23.0000,0,0.00%,LOW,Likely natural variation
+Completion Depth Avg,10.5000,76.2500,65.7500,-88.1250,174.8750,0,0.00%,LOW,Likely natural variation
+Complementary Interactions,1.0000,8.0000,7.0000,-9.5000,18.5000,0,0.00%,LOW,Likely natural variation
+Thematic Diversity,1.0000,5.0000,4.0000,-5.0000,11.0000,0,0.00%,LOW,Likely natural variation
+Pause Count,0.0000,1.0000,1.0000,-1.5000,2.5000,214,14.27%,HIGH,Investigate before removal
+Navigation Speed,0.1115,0.6332,0.5217,-0.6711,1.4159,18,1.20%,LOW,Likely natural variation
