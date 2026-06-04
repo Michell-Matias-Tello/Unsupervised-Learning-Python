@@ -26,7 +26,7 @@ clusters:
 ## Project Structure
 
 The project follows a modular and reproducible structure:
-
+---
 ├── data/
 │   ├── raw/                  # Synthetic dataset, data dictionary, cluster definitions
 │   └── processed/            # Scaled matrix, PCA/t-SNE outputs, cluster assignments
@@ -89,7 +89,7 @@ The project follows a modular and reproducible structure:
 │
 ├── requirements.txt
 └── README.md
-
+---
 
 ## Installation
 
