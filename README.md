@@ -25,10 +25,71 @@ clusters:
 
 ## Project Structure
 
-. ├── data/ │ ├── raw/ # Generated dataset, dictionary, cluster definitions │ └── processed/ # Scaled matrix, PCA/t-SNE, cluster assignments ├── notebooks/ │ ├── 01_exploratory_analysis.ipynb │ ├── 02_clustering_modeling.ipynb │ └── 03_evaluation_insights.ipynb ├── src/ │ ├── init.py │ ├── config.py # Central paths, columns, constants │ ├── data_generation.py # Phase 0 — synthetic data │ ├── eda.py # Phase 1 — exploratory analysis │ ├── preprocessing.py # Phase 2 — scaling + encoding │ ├── dimensionality_reduction.py# Phase 3 — PCA + t-SNE │ ├── clustering.py # Phase 4 — K-Means │ ├── profiling.py # Phase 5 — cluster profiling & personas │ └── pipeline.py # Orchestrates all phases ├── models/ # Persisted models (.pkl) ├── reports/ │ ├── figures/ # Saved charts │ └── tables/ # Saved summary tables ├── requirements.txt └── README.md
+The project follows a modular and reproducible structure:
 
+├── data/
+│   ├── raw/                  # Synthetic dataset, data dictionary, cluster definitions
+│   └── processed/            # Scaled matrix, PCA/t-SNE outputs, cluster assignments
+│
+├── notebooks/
+│   ├── 01_exploratory_analysis.ipynb
+│   ├── 02_clustering_modeling.ipynb
+│   └── 03_evaluation_insights.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   ├── config.py             # Centralized paths, columns, and constants
+│   ├── data_generation.py    # Phase 0: Synthetic data generation
+│   ├── eda.py                # Phase 1: Exploratory analysis
+│   ├── preprocessing.py      # Phase 2: Scaling and encoding
+│   ├── dimensionality_reduction.py  # Phase 3: PCA and t-SNE
+│   ├── clustering.py         # Phase 4: K-Means clustering
+│   ├── profiling.py          # Phase 5: Cluster profiling and persona mapping
+│   └── pipeline.py           # Orchestrates all phases
+│
+├── models/                  # Persisted models (e.g., .pkl files)
+│
+├── reports/
+│   ├── figures/              # Visualizations: EDA, clustering diagnostics, and profiling
+│   │   ├── univariate_distributions.png
+│   │   ├── boxplot_outliers.png
+│   │   ├── correlation_heatmap.png
+│   │   ├── categorical_distributions.png
+│   │   ├── pairplot_relationships.png
+│   │   ├── preprocessing_scaling_impact.png
+│   │   ├── pca_explained_variance.png
+│   │   ├── pca_loadings_heatmap.png
+│   │   ├── dual_projection_comparison.png
+│   │   ├── kmeans_diagnostics.png
+│   │   ├── dbscan_kdistance.png
+│   │   ├── silhouette_validation.png
+│   │   └── cluster_radar_profiles.png
+│   │
+│   └── tables/               # Summary tables: EDA, preprocessing, clustering, and profiling
+│       ├── descriptive_statistics.csv
+│       ├── outlier_analysis_summary.csv
+│       ├── spearman_correlation_matrix.csv
+│       ├── categorical_distributions.csv
+│       ├── data_quality_report.csv
+│       ├── scaling_report.csv
+│       ├── onehot_encoding_map.csv
+│       ├── final_feature_matrix_columns.csv
+│       ├── pca_variance_breakdown.csv
+│       ├── pca_dominant_features.csv
+│       ├── kmeans_k_selection.csv
+│       ├── kmeans_cluster_distribution.csv
+│       ├── dbscan_grid_search.csv
+│       ├── dbscan_failure_diagnosis.csv
+│       ├── model_selection_comparison.csv
+│       ├── silhouette_per_cluster.csv
+│       ├── cluster_numerical_profiles.csv
+│       ├── cluster_categorical_profiles.csv
+│       ├── cluster_persona_mapping.csv
+│       └── cluster_persona_detailed.csv
+│
+├── requirements.txt
+└── README.md
 
----
 
 ## Installation
 
