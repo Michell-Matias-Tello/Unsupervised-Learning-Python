@@ -91,60 +91,95 @@ The project follows a modular and reproducible structure:
 ├── requirements.txt
 └── README.md
 
+````
 
 ## Installation
 
-Requires **Python 3.9+**.
 
-```bash
-# 1. (Optional) Create and activate a virtual environment
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
 
-# 2. Install dependencies
-pip install -r requirements.txt
-Usage
-Step 1 — Bootstrap the project
-Run the generator script (the file that builds the structure, writes the src/ package and notebooks, and creates the dataset):
+2. **(Optional) Create a virtual environment:**
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+   ```
 
-python generate_project.py
-This produces:
-
-src/ populated with all phase modules
-notebooks/ with notebooks 01–03
-data/raw/ with the dataset, data dictionary, and cluster definitions
-Step 2 — Run the full pipeline
-python -m src.pipeline
-This executes all phases in order: data generation → EDA → preprocessing → dimensionality reduction → clustering → profiling.
-
-Alternative — Run interactively
-Open the notebooks in order:
-
-notebooks/01_exploratory_analysis.ipynb
-notebooks/02_clustering_modeling.ipynb
-notebooks/03_evaluation_insights.ipynb
-Pipeline Phases
-
-content_copy
-Copy
-Phase	Module	Output
-0	data_generation.py	data/raw/digital_content_sessions.csv
-1	eda.py	reports/outlier_analysis_summary.csv, heatmap
-2	preprocessing.py	data/processed/sessions_preprocessed.csv
-3	dimensionality_reduction.py	sessions_pca.csv, sessions_tsne.csv, loadings
-4	clustering.py	cluster_assignments.csv, models/kmeans_model.pkl
-5	profiling.py	reports/cluster_persona_mapping.csv
-Methodology Notes
-Scaling: StandardScaler (zero-mean, unit-variance) for numerical features.
-Encoding: One-hot encoding for nominal categorical features.
-Dimensionality reduction: PCA retaining ≥80% of variance; t-SNE for visualization only (not used as clustering input).
-Model selection: Optimal k chosen by silhouette score; validated with the Davies–Bouldin index. DBSCAN is included as a diagnostic comparison.
-Reproducibility: Global RANDOM_STATE = 42.
-Notes
-All scripts read/write files on disk; run them in a local environment (terminal, VS Code, or Jupyter), not in a cloud spreadsheet runtime.
-t-SNE uses the max_iter parameter, requiring scikit-learn ≥ 1.2.
-License
-For portfolio and educational use.
-
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 ---
+
+## Execution
+
+### Option 1: Full Pipeline
+Run the entire pipeline in one command:
+```bash
+python -m src.pipeline
+```
+This executes all phases sequentially:
+**Data Generation → EDA → Preprocessing → Dimensionality Reduction → Clustering → Profiling**.
+
+### Option 2: Step-by-Step Execution
+1. **Generate synthetic data:**
+   ```bash
+   python generate_project.py
+   ```
+   Outputs:
+   - `src/` with all phase modules
+   - `notebooks/` with Jupyter notebooks
+   - `data/raw/` with the dataset and definitions
+
+2. **Run individual phases:**
+   Open and execute the notebooks in order:
+   - `01_exploratory_analysis.ipynb`
+   - `02_clustering_modeling.ipynb`
+   - `03_evaluation_insights.ipynb`
+
+---
+
+## Pipeline Phases
+
+| **Phase** | **Module**                     | **Output**                                      |
+|-----------|--------------------------------|-------------------------------------------------|
+| 0         | `data_generation.py`          | `data/raw/digital_content_sessions.csv`         |
+| 1         | `eda.py`                       | `reports/outlier_analysis_summary.csv`, heatmap |
+| 2         | `preprocessing.py`             | `data/processed/sessions_preprocessed.csv`     |
+| 3         | `dimensionality_reduction.py` | `sessions_pca.csv`, `sessions_tsne.csv`, loadings|
+| 4         | `clustering.py`                | `cluster_assignments.csv`, `models/kmeans_model.pkl` |
+| 5         | `profiling.py`                 | `reports/cluster_persona_mapping.csv`           |
+
+---
+
+## Methodology
+
+### Data Processing
+- **Scaling:** `StandardScaler` for numerical features (zero-mean, unit-variance).
+- **Encoding:** One-hot encoding for categorical features.
+
+### Dimensionality Reduction
+- **PCA:** Retains ≥80% of variance for clustering input.
+- **t-SNE:** Used for visualization only (not for clustering).
+
+### Clustering
+- **K-Means:** Optimal `k` selected via silhouette score, validated with Davies–Bouldin index.
+- **DBSCAN:** Included for diagnostic comparison.
+
+### Reproducibility
+- Global `RANDOM_STATE = 42` for consistent results.
+
+---
+
+## Notes
+- All scripts are designed to read/write files locally. Execute in a **local environment** (terminal, VS Code, Jupyter).
+- t-SNE requires `scikit-learn ≥ 1.2` due to the `max_iter` parameter.
+
+---
+
+## License
+This project is intended for **portfolio and educational purposes**.
