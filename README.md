@@ -22,11 +22,12 @@ clusters:
 | Download & Depart   | Very brief sessions, high save/download actions, minimal in-session depth   |
 
 ---
-
 ## Project Structure
 
 The project follows a modular and reproducible structure:
----
+
+```plaintext
+.
 ├── data/
 │   ├── raw/                  # Synthetic dataset, data dictionary, cluster definitions
 │   └── processed/            # Scaled matrix, PCA/t-SNE outputs, cluster assignments
@@ -89,7 +90,7 @@ The project follows a modular and reproducible structure:
 │
 ├── requirements.txt
 └── README.md
----
+
 
 ## Installation
 
